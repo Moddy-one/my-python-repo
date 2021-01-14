@@ -49,3 +49,9 @@ london_co = {
         "routing": True,
     },
 }
+
+hsn = input ('Введите имя : ')
+paramlist = str(list(london_co[hsn].keys())).strip('[]')
+paramn = input ('Введите имя параметра ('+ paramlist.replace("'","") + '): ')
+print ('-'*30)
+print(london_co[hsn].get(paramn, 'Такого параметра нет'))

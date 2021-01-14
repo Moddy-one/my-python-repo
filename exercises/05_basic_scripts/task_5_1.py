@@ -46,3 +46,7 @@ london_co = {
         "routing": True,
     },
 }
+
+hsn = input ('Введите имя : ')
+print ('-'*30)
+print(london_co[hsn])
