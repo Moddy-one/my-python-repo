@@ -17,3 +17,9 @@
 Ограничение: Все задания надо выполнять используя только пройденные темы.
 
 """
+println ='{:7}{:17}{:7}'
+with open('CAM_table.txt') as f:
+    for line in f:
+        if 'DYNAMIC' in line:
+            line_list = line.split()
+            print(println.format(line_list[0],line_list[1],line_list[3]))

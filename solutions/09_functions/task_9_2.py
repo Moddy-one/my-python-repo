@@ -67,3 +67,9 @@ def generate_trunk_config(intf_vlan_mapping, trunk_template):
             else:
                 trunk_conf.append(command)
     return trunk_conf
+res = generate_trunk_config(trunk_config,trunk_mode_template)
+#print('\n'.join(res))
+#for items in res:
+    #print(items)
+
+print(res)

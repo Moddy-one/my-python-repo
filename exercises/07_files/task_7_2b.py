@@ -14,3 +14,12 @@
 """
 
 ignore = ["duplex", "alias", "Current configuration"]
+
+with open('config_sw1.txt') as f, open('config_sw1_cleared.txt', 'w') as f2:
+    for line in f:
+        line_false = False
+        for ign_word in ignore:
+            if ign_word in line:
+                line_false = True
+        if not line_false:
+            f2.write(line)
